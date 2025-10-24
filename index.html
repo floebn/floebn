@@ -1,11 +1,319 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
-    <title>BoßelGo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoßelGo - Die Boßel-App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px 30px;
+        }
+        
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .link-card {
+            display: block;
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .link-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+            border-color: #667eea;
+        }
+        
+        .link-card h2 {
+            font-size: 1.5em;
+            margin-bottom: 8px;
+            color: #667eea;
+        }
+        
+        .link-card p {
+            color: #666;
+            font-size: 0.95em;
+        }
+        
+        .footer {
+            padding: 20px 30px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+            border-top: 1px solid #eee;
+        }
+        
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>BoßelGo - Die Boßel-App</h1>
-    <p><a href="/support-bosselgo/">Support</a></p>
-    <p><a href="/datenschutz-bosselgo/">Datenschutz</a></p>
+    <div class="container">
+        <div class="header">
+            <h1>BoßelGo</h1>
+            <p>Die mobile App für Boßel-Wettkämpfe</p>
+        </div>
+        
+        <div class="content">
+            <div class="links">
+                <a href="#support" class="link-card" id="support-link">
+                    <h2>📧 Support</h2>
+                    <p>Hilfe und Kontakt für Ihre Fragen</p>
+                </a>
+                
+                <a href="#datenschutz" class="link-card" id="datenschutz-link">
+                    <h2>🔒 Datenschutz</h2>
+                    <p>Informationen zum Datenschutz</p>
+                </a>
+            </div>
+        </div>
+        
+        <div class="footer">
+            © 2025 BoßelGo - Florian Eiben
+        </div>
+    </div>
+
+    <!-- Support Section -->
+    <div id="support" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.8); z-index: 1000; padding: 20px; overflow-y: auto;">
+        <div class="container" style="margin: 40px auto; max-width: 800px;">
+            <div class="header">
+                <h1>Support für BoßelGo</h1>
+            </div>
+            <div class="content" style="padding: 40px;">
+                <p style="margin-bottom: 20px;">Wenn Sie Unterstützung benötigen oder Fragen haben, kontaktieren Sie bitte:</p>
+                
+                <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin: 20px 0;">
+                    <p><strong>Florian Eiben</strong></p>
+                    <p>E-Mail: <a href="mailto:bosselgo@web.de" style="color: #667eea;">bosselgo@web.de</a></p>
+                </div>
+                
+                <p>Bitte nutzen Sie diese E-Mail-Adresse für Support-Anfragen oder Feedback zur App.</p>
+                
+                <button onclick="document.getElementById('support').style.display='none'" 
+                        style="margin-top: 30px; padding: 12px 30px; background: #667eea; color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 1em;">
+                    Schließen
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Datenschutz Section -->
+    <div id="datenschutz" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.8); z-index: 1000; padding: 20px; overflow-y: auto;">
+        <div class="container" style="margin: 40px auto; max-width: 900px;">
+            <div class="header">
+                <h1>Datenschutzerklärung</h1>
+            </div>
+            <div class="content" style="padding: 40px;">
+                <h2 style="color: #667eea; margin-top: 30px; margin-bottom: 15px;">Datenschutzerklärung für BoßelGo</h2>
+                <p><strong>Stand: 22.10.2025</strong></p>
+
+                <h3 style="color: #667eea; margin-top: 25px; margin-bottom: 10px;">Verantwortlicher</h3>
+                <p>Florian Eiben<br>
+                Leerhafe, 26409 Wittmund<br>
+                E-Mail: <a href="mailto:bosselgo@web.de" style="color: #667eea;">bosselgo@web.de</a></p>
+
+                <h3 style="color: #667eea; margin-top: 25px; margin-bottom: 10px;">Beschreibung der App</h3>
+                <p>BoßelGo ist eine mobile App zur Erfassung und Auswertung von Boßel-Wettkämpfen. Alle Match- und Spielerdaten werden ausschließlich lokal auf Ihrem Gerät verarbeitet.</p>
+
+                <h3 style="color: #667eea; margin-top: 25px; margin-bottom: 10px;">Verarbeitete Daten in der App</h3>
+                <p><strong>Lokal auf dem Gerät:</strong></p>
+                <ul style="margin-left: 20px; margin-bottom: 15px;">
+                    <li>Matchdaten (Datum, Ergebnis, Runden, Würfe)</li>
+                    <li>Teamnamen / Spielernamen (falls von Ihnen eingetragen)</li>
+                    <li>Premium-/Kaufstatus (lokal aus App Store/Play Billing abgeleitet)</li>
+                </ul>
+                <p><strong>Es findet keine serverseitige Speicherung durch den Anbieter statt.</strong></p>
+                <ul style="margin-left: 20px;">
+                    <li>Keine Standortdaten</li>
+                    <li>Keine Erstellung persönlicher Nutzerkonten</li>
+                </ul>
+
+                <h3 style="color: #667eea; margin-top: 25px; margin-bottom: 10px;">Werbung (Google AdMob)</h3>
+                <p>Die App bindet Google AdMob (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland) ein.</p>
+                <p><strong>Verarbeitete Daten durch AdMob:</strong></p>
+                <ul style="margin-left: 20px; margin-bottom: 15px;">
+                    <li>Technische Geräteinformationen (z.B. Gerätekennungen, Werbe-ID)</li>
+                    <li>App-Nutzungsereignisse</li>
+                    <li>IP-Adresse (zur Betrugsprävention und ungefähren Standortbestimmung)</li>
+                    <li>Crash-Daten und Leistungsmetriken</li>
+                </ul>
+                <p><strong>Zweck der Verarbeitung:</strong></p>
+                <ul style="margin-left: 20px; margin-bottom: 15px;">
+                    <li>Auslieferung und Messung von Werbeanzeigen</li>
+                    <li>Betrugsprävention</li>
+                    <li>App-Stabilität und Performance-Analyse</li>
+                </ul>
+                <p>Es erfolgt keine eigene Weitergabe dieser Daten durch den Anbieter. Die App ist so konfiguriert, dass vorrangig nicht personalisierte Anzeigen ausgeliefert werden (Google verarbeitet diese ohne Profilbildung).</p>
+                <p>Google Datenschutzhinweise: <a href="https://policies.google.com/privacy" target="_blank" style="color: #667eea;">https://policies.google.com/privacy</a></p>
+                
+                <p><strong>Opt-out Werbe-ID:</strong></p>
+                <ul style="margin-left: 20px;">
+                    <li><strong>Android:</strong> Systemeinstellungen > Google > Anzeigen > "Werbe-ID zurücksetzen" oder "Personalisierte Werbung deaktivieren"</li>
+                    <li><strong>iOS:</strong> Einstellungen > Datenschutz & Sicherheit > Tracking > "Apps erlauben, Tracking anzufordern" deaktivieren</li>
+                </ul>
+
+                <h3 style="color: #667eea; margin-top: 25px; margin-bottom: 10px;">In-App-Käufe</h3>
+                <p>Zur Freischaltung der Pro-Funktionen werden Käufe über App Store (Apple) bzw. Google Play Billing abgewickelt.</p>
+                <p><strong>Verarbeitete Daten:</strong></p>
+                <ul style="margin-left: 20px; margin-bottom: 15px;">
+                    <li>Kauftransaktionsdaten (Datum, Produkttyp, Preis)</li>
+                    <li>Apple-ID bzw. Google-Account-ID</li>
+                    <li>Zahlungsinformationen (werden ausschließlich von Apple/Google verarbeitet)</li>
+                </ul>
+                <p>Der Anbieter erhält keinen direkten Zugriff auf Ihre Zahlungsdaten. Es wird lokal lediglich der Freischaltstatus gespeichert.</p>
+                <p>Apple Datenschutzhinweise: <a href="https://www.apple.com/legal/privacy/" target="_blank" style="color: #667eea;">https://www.apple.com/legal/privacy/</a><br>
+                Google Play Datenschutzhinweise: <a href="https://policies.google.com/privacy" target="_blank" style="color: #667eea;">https://policies.google.com/privacy</a></p>
+
+                <h3 style="color: #667eea; margin-top: 25px; margin-bottom: 10px;">Rechtsgrundlagen (DSGVO)</h3>
+                <ul style="margin-left: 20px;">
+                    <li><strong>Art. 6 Abs. 1 lit. b DSGVO</strong> – Bereitstellung der Appfunktionen, Abwicklung von In-App-Käufen</li>
+                    <li><strong>Art. 6 Abs. 1 lit. f DSGVO</strong> – Berechtigtes Interesse: Finanzierung durch Werbung, App-Stabilität und Betrugsprävention</li>
+                </ul>
+                <p>Für personalisierte Werbung würde Art. 6 Abs. 1 lit. a (Einwilligung) gelten; derzeit erfolgt die Ausrichtung auf nicht personalisierte Anzeigen (soweit technisch konfiguriert).</p>
+
+                <h3 style="color: #667eea; margin-top: 25px; margin-bottom: 10px;">Weitergabe von Daten / Drittlandübermittlung</h3>
+                <p>Es erfolgt keine eigene Weitergabe Ihrer lokal verbleibenden Appdaten durch den Anbieter.</p>
+                <p>AdMob (Google) und App Store (Apple) können Daten in Drittländer (z.B. USA) übertragen:</p>
+                <ul style="margin-left: 20px;">
+                    <li><strong>Rechtsgrundlage:</strong> EU-Standardvertragsklauseln und Angemessenheitsbeschlüsse</li>
+                    <li><strong>Weitere Informationen:</strong> Siehe Datenschutzerklärungen von Google und Apple (Links oben)</li>
+                </ul>
+
+                <h3 style="color: #667eea; margin-top: 25px; margin-bottom: 10px;">Speicherdauer</h3>
+                <ul style="margin-left: 20px;">
+                    <li><strong>Match-/Spielerdaten:</strong> Verbleiben bis zu Ihrer Löschung bzw. Deinstallation auf dem Gerät</li>
+                    <li><strong>Werbedatenverarbeitung:</strong> Nach den Löschfristen von Google</li>
+                    <li><strong>Kaufstatus:</strong> Bleibt bis zum Zurücksetzen/Neuinstallation lokal bestehen; Transaktionsdaten bei Apple/Google nach deren Aufbewahrungsfristen</li>
+                </ul>
+
+                <h3 style="color: #667eea; margin-top: 25px; margin-bottom: 10px;">Rechte der betroffenen Personen</h3>
+                <p>Sie haben folgende Rechte gemäß Art. 15–21 DSGVO:</p>
+                <ul style="margin-left: 20px;">
+                    <li>Auskunft über die Sie betreffenden Daten</li>
+                    <li>Berichtigung unrichtiger Daten</li>
+                    <li>Löschung Ihrer Daten (soweit keine gesetzliche Aufbewahrungspflicht besteht)</li>
+                    <li>Einschränkung der Verarbeitung</li>
+                    <li>Widerspruch gegen die Verarbeitung</li>
+                    <li>Datenübertragbarkeit</li>
+                    <li>Widerruf erteilter Einwilligungen (mit Wirkung für die Zukunft)</li>
+                </ul>
+                <p>Kontakt für Datenschutzanfragen: <a href="mailto:bosselgo@web.de" style="color: #667eea;">bosselgo@web.de</a></p>
+                <p>Zusätzlich haben Sie das Recht auf Beschwerde bei einer Aufsichtsbehörde (z.B. Landesbeauftragte für Datenschutz und Informationsfreiheit).</p>
+
+                <h3 style="color: #667eea; margin-top: 25px; margin-bottom: 10px;">Sicherheit</h3>
+                <ul style="margin-left: 20px;">
+                    <li>Daten bleiben lokal in der App-Sandbox gespeichert</li>
+                    <li>Kommunikation mit App Store/Play Billing und AdMob erfolgt verschlüsselt über TLS/HTTPS</li>
+                    <li>Keine eigene Serverinfrastruktur</li>
+                </ul>
+
+                <h3 style="color: #667eea; margin-top: 25px; margin-bottom: 10px;">Minderjährige</h3>
+                <p>Die App richtet sich nicht gezielt an Kinder unter 16 Jahren. Es werden keine Daten wissentlich von Kindern unter 16 Jahren gesammelt.</p>
+
+                <h3 style="color: #667eea; margin-top: 25px; margin-bottom: 10px;">Keine besonderen Kategorien von Daten</h3>
+                <p>Es werden keine sensiblen Daten nach Art. 9 DSGVO (z.B. Gesundheitsdaten, biometrische Daten) verarbeitet.</p>
+
+                <h3 style="color: #667eea; margin-top: 25px; margin-bottom: 10px;">Automatisierte Entscheidungsfindung</h3>
+                <p>Es findet keine automatisierte Entscheidungsfindung einschließlich Profiling gemäß Art. 22 DSGVO statt.</p>
+
+                <h3 style="color: #667eea; margin-top: 25px; margin-bottom: 10px;">Änderungen dieser Datenschutzerklärung</h3>
+                <p>Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf anzupassen. Die aktuelle Fassung ist stets unter dieser URL verfügbar.</p>
+                <p>Bei wesentlichen Änderungen werden Sie über die App informiert.</p>
+
+                <h3 style="color: #667eea; margin-top: 25px; margin-bottom: 10px;">Kontakt</h3>
+                <p>Datenschutzanfragen: <a href="mailto:bosselgo@web.de" style="color: #667eea;">bosselgo@web.de</a></p>
+                
+                <button onclick="document.getElementById('datenschutz').style.display='none'" 
+                        style="margin-top: 30px; padding: 12px 30px; background: #667eea; color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 1em;">
+                    Schließen
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('support-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('support').style.display = 'block';
+        });
+        
+        document.getElementById('datenschutz-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('datenschutz').style.display = 'block';
+        });
+        
+        // Close on background click
+        document.getElementById('support').addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.style.display = 'none';
+            }
+        });
+        
+        document.getElementById('datenschutz').addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html>
