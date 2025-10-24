@@ -1,11 +1,181 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
-    <title>BoßelGo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BoßelGo - Die moderne Boßel-App für Ihr Boßel-Erlebnis">
+    <title>BoßelGo - Die Boßel-App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            animation: fadeIn 0.6s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .link-card {
+            display: block;
+            padding: 20px 25px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .link-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(102, 126, 234, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .link-card:hover::before {
+            left: 100%;
+        }
+
+        .link-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.2);
+            border-color: #667eea;
+            background: white;
+        }
+
+        .link-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #667eea;
+        }
+
+        .link-description {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .footer {
+            padding: 20px 30px;
+            background: #f8f9fa;
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .header, .content {
+                padding: 30px 20px;
+            }
+
+            .link-card {
+                padding: 18px 20px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation: none !important;
+                transition: none !important;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>BoßelGo - Die Boßel-App</h1>
-    <p><a href="/support-bosselgo/">Support</a></p>
-    <p><a href="/datenschutz-bosselgo/">Datenschutz</a></p>
+    <div class="container">
+        <header class="header">
+            <h1>BoßelGo</h1>
+            <p class="subtitle">Die moderne Boßel-App</p>
+        </header>
+        
+        <main class="content">
+            <nav class="links" aria-label="Hauptnavigation">
+                <a href="/support-bosselgo/" class="link-card">
+                    <div class="link-title">Support</div>
+                    <div class="link-description">Hilfe und Unterstützung für BoßelGo</div>
+                </a>
+                
+                <a href="/datenschutz-bosselgo/" class="link-card">
+                    <div class="link-title">Datenschutz</div>
+                    <div class="link-description">Informationen zum Datenschutz</div>
+                </a>
+            </nav>
+        </main>
+        
+        <footer class="footer">
+            <p>&copy; 2025 BoßelGo - Alle Rechte vorbehalten</p>
+        </footer>
+    </div>
 </body>
 </html>
