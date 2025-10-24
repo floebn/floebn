@@ -20,7 +20,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 20px;
+            padding: 15px;
         }
         
         .container {
@@ -35,15 +35,15 @@
         .header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 40px 30px;
+            padding: 30px 20px;
             text-align: center;
         }
         
         .logo {
-            width: 120px;
-            height: 120px;
-            margin: 0 auto 20px;
-            border-radius: 25px;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 15px;
+            border-radius: 22px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             background: white;
             padding: 5px;
@@ -63,35 +63,36 @@
         }
         
         .header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
+            font-size: 2em;
+            margin-bottom: 8px;
             font-weight: 700;
         }
         
         .header p {
-            font-size: 1.1em;
+            font-size: 1em;
             opacity: 0.9;
         }
         
         .content {
-            padding: 40px 30px;
+            padding: 25px 20px;
         }
         
         .links {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 15px;
         }
         
         .link-card {
             display: block;
-            padding: 25px;
+            padding: 20px;
             background: #f8f9fa;
             border-radius: 12px;
             text-decoration: none;
             color: #333;
             transition: all 0.3s ease;
             border: 2px solid transparent;
+            -webkit-tap-highlight-color: transparent;
         }
         
         .link-card:hover {
@@ -100,37 +101,305 @@
             border-color: #667eea;
         }
         
+        .link-card:active {
+            transform: translateY(-2px);
+        }
+        
         .link-card h2 {
-            font-size: 1.5em;
-            margin-bottom: 8px;
+            font-size: 1.3em;
+            margin-bottom: 6px;
             color: #667eea;
         }
         
         .link-card p {
             color: #666;
-            font-size: 0.95em;
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 12px;
+            margin-top: 25px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .social-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9em;
+            transition: all 0.3s ease;
+            -webkit-tap-highlight-color: transparent;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .social-button:active {
+            transform: scale(0.95);
+        }
+        
+        .instagram-button {
+            background: linear-gradient(135deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+            color: white;
+        }
+        
+        .instagram-button:hover {
+            box-shadow: 0 6px 25px rgba(131, 58, 180, 0.4);
+            transform: translateY(-2px);
+        }
+        
+        .appstore-button {
+            background: linear-gradient(135deg, #000000 0%, #434343 100%);
+            color: white;
+        }
+        
+        .appstore-button:hover {
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+            transform: translateY(-2px);
+        }
+        
+        .button-icon {
+            font-size: 1.2em;
         }
         
         .footer {
-            padding: 20px 30px;
+            padding: 15px 20px;
             text-align: center;
             color: #666;
-            font-size: 0.9em;
+            font-size: 0.85em;
             border-top: 1px solid #eee;
         }
         
-        @media (max-width: 600px) {
+        /* Modal Overlay Styles */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.8);
+            z-index: 1000;
+            padding: 15px;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        .modal-container {
+            margin: 20px auto;
+            max-width: 900px;
+            width: 100%;
+        }
+        
+        .modal-content {
+            padding: 25px 20px;
+        }
+        
+        .modal-content h2 {
+            color: #667eea;
+            margin-top: 20px;
+            margin-bottom: 12px;
+            font-size: 1.3em;
+        }
+        
+        .modal-content h3 {
+            color: #667eea;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        .modal-content p {
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+        
+        .modal-content ul {
+            margin-left: 20px;
+            margin-bottom: 12px;
+        }
+        
+        .modal-content li {
+            margin-bottom: 6px;
+            line-height: 1.5;
+        }
+        
+        .modal-content a {
+            color: #667eea;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+        
+        .close-button {
+            margin-top: 25px;
+            padding: 12px 30px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            width: 100%;
+            max-width: 200px;
+            -webkit-tap-highlight-color: transparent;
+            transition: background 0.3s ease;
+        }
+        
+        .close-button:active {
+            background: #5568d3;
+        }
+        
+        @media (min-width: 601px) {
+            .header {
+                padding: 40px 30px;
+            }
+            
             .header h1 {
-                font-size: 2em;
+                font-size: 2.5em;
+            }
+            
+            .header p {
+                font-size: 1.1em;
             }
             
             .logo {
-                width: 100px;
-                height: 100px;
+                width: 120px;
+                height: 120px;
+                margin-bottom: 20px;
+                border-radius: 25px;
             }
             
             .content {
-                padding: 30px 20px;
+                padding: 40px 30px;
+            }
+            
+            .links {
+                gap: 20px;
+            }
+            
+            .link-card {
+                padding: 25px;
+            }
+            
+            .link-card h2 {
+                font-size: 1.5em;
+                margin-bottom: 8px;
+            }
+            
+            .link-card p {
+                font-size: 0.95em;
+            }
+            
+            .footer {
+                padding: 20px 30px;
+                font-size: 0.9em;
+            }
+            
+            .modal-overlay {
+                padding: 20px;
+            }
+            
+            .modal-container {
+                margin: 40px auto;
+            }
+            
+            .modal-content {
+                padding: 40px;
+            }
+            
+            .modal-content h2 {
+                font-size: 1.5em;
+                margin-top: 30px;
+                margin-bottom: 15px;
+            }
+            
+            .modal-content h3 {
+                font-size: 1.2em;
+                margin-top: 25px;
+            }
+            
+            .close-button {
+                width: auto;
+            }
+            
+            .social-button {
+                font-size: 1em;
+                padding: 14px 24px;
+            }
+        }
+        
+        @media (max-width: 400px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                border-radius: 15px;
+            }
+            
+            .header {
+                padding: 25px 15px;
+            }
+            
+            .logo {
+                width: 80px;
+                height: 80px;
+                border-radius: 18px;
+            }
+            
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .header p {
+                font-size: 0.95em;
+            }
+            
+            .content {
+                padding: 20px 15px;
+            }
+            
+            .link-card {
+                padding: 18px;
+            }
+            
+            .link-card h2 {
+                font-size: 1.2em;
+            }
+            
+            .link-card p {
+                font-size: 0.85em;
+            }
+            
+            .modal-overlay {
+                padding: 10px;
+            }
+            
+            .modal-content {
+                padding: 20px 15px;
+            }
+            
+            .modal-content h2 {
+                font-size: 1.2em;
+            }
+            
+            .modal-content h3 {
+                font-size: 1.05em;
+            }
+            
+            .social-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .social-button {
+                width: 100%;
+                justify-content: center;
             }
         }
     </style>
@@ -155,6 +424,17 @@
                     <p>Informationen zum Datenschutz</p>
                 </a>
             </div>
+            
+            <div class="social-links">
+                <a href="https://www.instagram.com/bosselgo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="social-button instagram-button">
+                    <span class="button-icon">📷</span>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://apps.apple.com/de/app/bo%C3%9Felgo/id6753705513" target="_blank" rel="noopener noreferrer" class="social-button appstore-button">
+                    <span class="button-icon">📱</span>
+                    <span>App Store</span>
+                </a>
+            </div>
         </div>
         
         <div class="footer">
@@ -163,36 +443,38 @@
     </div>
 
     <!-- Support Section -->
-    <div id="support" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.8); z-index: 1000; padding: 20px; overflow-y: auto;">
-        <div class="container" style="margin: 40px auto; max-width: 800px;">
-            <div class="header">
-                <h1>Support für BoßelGo</h1>
-            </div>
-            <div class="content" style="padding: 40px;">
-                <p style="margin-bottom: 20px;">Wenn Sie Unterstützung benötigen oder Fragen haben, kontaktieren Sie bitte:</p>
-                
-                <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin: 20px 0;">
-                    <p><strong>Florian Eiben</strong></p>
-                    <p>E-Mail: <a href="mailto:bosselgo@web.de" style="color: #667eea;">bosselgo@web.de</a></p>
+    <div id="support" class="modal-overlay">
+        <div class="modal-container">
+            <div class="container">
+                <div class="header">
+                    <h1>Support für BoßelGo</h1>
                 </div>
-                
-                <p>Bitte nutzen Sie diese E-Mail-Adresse für Support-Anfragen oder Feedback zur App.</p>
-                
-                <button onclick="document.getElementById('support').style.display='none'" 
-                        style="margin-top: 30px; padding: 12px 30px; background: #667eea; color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 1em;">
-                    Schließen
-                </button>
+                <div class="modal-content">
+                    <p style="margin-bottom: 20px;">Wenn Sie Unterstützung benötigen oder Fragen haben, kontaktieren Sie bitte:</p>
+                    
+                    <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin: 20px 0;">
+                        <p><strong>Florian Eiben</strong></p>
+                        <p>E-Mail: <a href="mailto:bosselgo@web.de" style="color: #667eea;">bosselgo@web.de</a></p>
+                    </div>
+                    
+                    <p>Bitte nutzen Sie diese E-Mail-Adresse für Support-Anfragen oder Feedback zur App.</p>
+                    
+                    <button onclick="document.getElementById('support').style.display='none'" class="close-button">
+                        Schließen
+                    </button>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Datenschutz Section -->
-    <div id="datenschutz" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.8); z-index: 1000; padding: 20px; overflow-y: auto;">
-        <div class="container" style="margin: 40px auto; max-width: 900px;">
-            <div class="header">
-                <h1>Datenschutzerklärung</h1>
-            </div>
-            <div class="content" style="padding: 40px;">
+    <div id="datenschutz" class="modal-overlay">
+        <div class="modal-container">
+            <div class="container">
+                <div class="header">
+                    <h1>Datenschutzerklärung</h1>
+                </div>
+                <div class="modal-content">
                 <h2 style="color: #667eea; margin-top: 30px; margin-bottom: 15px;">Datenschutzerklärung für BoßelGo</h2>
                 <p><strong>Stand: 22.10.2025</strong></p>
 
@@ -309,13 +591,13 @@
                 <p>Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf anzupassen. Die aktuelle Fassung ist stets unter dieser URL verfügbar.</p>
                 <p>Bei wesentlichen Änderungen werden Sie über die App informiert.</p>
 
-                <h3 style="color: #667eea; margin-top: 25px; margin-bottom: 10px;">Kontakt</h3>
-                <p>Datenschutzanfragen: <a href="mailto:bosselgo@web.de" style="color: #667eea;">bosselgo@web.de</a></p>
+                <h3>Kontakt</h3>
+                <p>Datenschutzanfragen: <a href="mailto:bosselgo@web.de">bosselgo@web.de</a></p>
                 
-                <button onclick="document.getElementById('datenschutz').style.display='none'" 
-                        style="margin-top: 30px; padding: 12px 30px; background: #667eea; color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 1em;">
+                <button onclick="document.getElementById('datenschutz').style.display='none'" class="close-button">
                     Schließen
                 </button>
+                </div>
             </div>
         </div>
     </div>
