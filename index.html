@@ -163,6 +163,16 @@
             transform: translateY(-2px);
         }
         
+        .playstore-button {
+            background: linear-gradient(135deg, #01875f 0%, #00c853 100%);
+            color: white;
+        }
+        
+        .playstore-button:hover {
+            box-shadow: 0 6px 25px rgba(1, 135, 95, 0.4);
+            transform: translateY(-2px);
+        }
+        
         .button-icon {
             font-size: 1.2em;
         }
@@ -434,6 +444,10 @@
                     <span class="button-icon">📱</span>
                     <span>App Store</span>
                 </a>
+                <a href="https://play.google.com/store/apps/details?id=de.bosselgo.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="social-button playstore-button">
+                    <span class="button-icon">▶️</span>
+                    <span>Google Play</span>
+                </a>
             </div>
         </div>
         
@@ -622,7 +636,7 @@
         
         document.getElementById('datenschutz').addEventListener('click', function(e) {
             if (e.target === this) {
-                this.style.display = 'none';
+                this.style.done = 'none';
             }
         });
     </script>
