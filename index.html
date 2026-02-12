@@ -10,7 +10,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             line-height: 1.6;
@@ -22,7 +22,7 @@
             align-items: center;
             padding: 15px;
         }
-        
+
         .container {
             max-width: 600px;
             width: 100%;
@@ -31,14 +31,14 @@
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
             overflow: hidden;
         }
-        
+
         .header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             padding: 30px 20px;
             text-align: center;
         }
-        
+
         .logo {
             width: 100px;
             height: 100px;
@@ -50,7 +50,7 @@
             display: block;
             animation: fadeInScale 0.6s ease-out;
         }
-        
+
         @keyframes fadeInScale {
             from {
                 opacity: 0;
@@ -61,28 +61,28 @@
                 transform: scale(1);
             }
         }
-        
+
         .header h1 {
             font-size: 2em;
             margin-bottom: 8px;
             font-weight: 700;
         }
-        
+
         .header p {
             font-size: 1em;
             opacity: 0.9;
         }
-        
+
         .content {
             padding: 25px 20px;
         }
-        
+
         .links {
             display: flex;
             flex-direction: column;
             gap: 15px;
         }
-        
+
         .link-card {
             display: block;
             padding: 20px;
@@ -94,29 +94,29 @@
             border: 2px solid transparent;
             -webkit-tap-highlight-color: transparent;
         }
-        
+
         .link-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
             border-color: #667eea;
         }
-        
+
         .link-card:active {
             transform: translateY(-2px);
         }
-        
+
         .link-card h2 {
             font-size: 1.3em;
             margin-bottom: 6px;
             color: #667eea;
         }
-        
+
         .link-card p {
             color: #666;
             font-size: 0.9em;
             line-height: 1.4;
         }
-        
+
         .social-links {
             display: flex;
             gap: 12px;
@@ -124,7 +124,7 @@
             flex-wrap: wrap;
             justify-content: center;
         }
-        
+
         .social-button {
             display: inline-flex;
             align-items: center;
@@ -138,45 +138,45 @@
             -webkit-tap-highlight-color: transparent;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
-        
+
         .social-button:active {
             transform: scale(0.95);
         }
-        
+
         .instagram-button {
             background: linear-gradient(135deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
             color: white;
         }
-        
+
         .instagram-button:hover {
             box-shadow: 0 6px 25px rgba(131, 58, 180, 0.4);
             transform: translateY(-2px);
         }
-        
+
         .appstore-button {
             background: linear-gradient(135deg, #000000 0%, #434343 100%);
             color: white;
         }
-        
+
         .appstore-button:hover {
             box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
             transform: translateY(-2px);
         }
-        
+
         .playstore-button {
             background: linear-gradient(135deg, #01875f 0%, #00c853 100%);
             color: white;
         }
-        
+
         .playstore-button:hover {
             box-shadow: 0 6px 25px rgba(1, 135, 95, 0.4);
             transform: translateY(-2px);
         }
-        
+
         .button-icon {
             font-size: 1.2em;
         }
-        
+
         .footer {
             padding: 15px 20px;
             text-align: center;
@@ -184,7 +184,7 @@
             font-size: 0.85em;
             border-top: 1px solid #eee;
         }
-        
+
         /* Modal Overlay Styles */
         .modal-overlay {
             display: none;
@@ -199,52 +199,52 @@
             overflow-y: auto;
             -webkit-overflow-scrolling: touch;
         }
-        
+
         .modal-container {
             margin: 20px auto;
             max-width: 900px;
             width: 100%;
         }
-        
+
         .modal-content {
             padding: 25px 20px;
         }
-        
+
         .modal-content h2 {
             color: #667eea;
             margin-top: 20px;
             margin-bottom: 12px;
             font-size: 1.3em;
         }
-        
+
         .modal-content h3 {
             color: #667eea;
             margin-top: 20px;
             margin-bottom: 10px;
             font-size: 1.1em;
         }
-        
+
         .modal-content p {
             margin-bottom: 12px;
             line-height: 1.6;
         }
-        
+
         .modal-content ul {
             margin-left: 20px;
             margin-bottom: 12px;
         }
-        
+
         .modal-content li {
             margin-bottom: 6px;
             line-height: 1.5;
         }
-        
+
         .modal-content a {
             color: #667eea;
             word-wrap: break-word;
             overflow-wrap: break-word;
         }
-        
+
         .close-button {
             margin-top: 25px;
             padding: 12px 30px;
@@ -259,154 +259,154 @@
             -webkit-tap-highlight-color: transparent;
             transition: background 0.3s ease;
         }
-        
+
         .close-button:active {
             background: #5568d3;
         }
-        
+
         @media (min-width: 601px) {
             .header {
                 padding: 40px 30px;
             }
-            
+
             .header h1 {
                 font-size: 2.5em;
             }
-            
+
             .header p {
                 font-size: 1.1em;
             }
-            
+
             .logo {
                 width: 120px;
                 height: 120px;
                 margin-bottom: 20px;
                 border-radius: 25px;
             }
-            
+
             .content {
                 padding: 40px 30px;
             }
-            
+
             .links {
                 gap: 20px;
             }
-            
+
             .link-card {
                 padding: 25px;
             }
-            
+
             .link-card h2 {
                 font-size: 1.5em;
                 margin-bottom: 8px;
             }
-            
+
             .link-card p {
                 font-size: 0.95em;
             }
-            
+
             .footer {
                 padding: 20px 30px;
                 font-size: 0.9em;
             }
-            
+
             .modal-overlay {
                 padding: 20px;
             }
-            
+
             .modal-container {
                 margin: 40px auto;
             }
-            
+
             .modal-content {
                 padding: 40px;
             }
-            
+
             .modal-content h2 {
                 font-size: 1.5em;
                 margin-top: 30px;
                 margin-bottom: 15px;
             }
-            
+
             .modal-content h3 {
                 font-size: 1.2em;
                 margin-top: 25px;
             }
-            
+
             .close-button {
                 width: auto;
             }
-            
+
             .social-button {
                 font-size: 1em;
                 padding: 14px 24px;
             }
         }
-        
+
         @media (max-width: 400px) {
             body {
                 padding: 10px;
             }
-            
+
             .container {
                 border-radius: 15px;
             }
-            
+
             .header {
                 padding: 25px 15px;
             }
-            
+
             .logo {
                 width: 80px;
                 height: 80px;
                 border-radius: 18px;
             }
-            
+
             .header h1 {
                 font-size: 1.8em;
             }
-            
+
             .header p {
                 font-size: 0.95em;
             }
-            
+
             .content {
                 padding: 20px 15px;
             }
-            
+
             .link-card {
                 padding: 18px;
             }
-            
+
             .link-card h2 {
                 font-size: 1.2em;
             }
-            
+
             .link-card p {
                 font-size: 0.85em;
             }
-            
+
             .modal-overlay {
                 padding: 10px;
             }
-            
+
             .modal-content {
                 padding: 20px 15px;
             }
-            
+
             .modal-content h2 {
                 font-size: 1.2em;
             }
-            
+
             .modal-content h3 {
                 font-size: 1.05em;
             }
-            
+
             .social-links {
                 flex-direction: column;
                 gap: 10px;
             }
-            
+
             .social-button {
                 width: 100%;
                 justify-content: center;
@@ -415,103 +415,131 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <img src="appicon_trans.png" alt="BoßelGo Logo" class="logo">
-            <h1>BoßelGo</h1>
-            <p>Die mobile App für Boßel-Wettkämpfe</p>
+<div class="container">
+    <div class="header">
+        <img src="appicon_trans.png" alt="BoßelGo Logo" class="logo">
+        <h1>BoßelGo</h1>
+        <p>Die mobile App für Boßel-Wettkämpfe</p>
+    </div>
+
+    <div class="content">
+        <div class="links">
+            <a href="#support" class="link-card" id="support-link">
+                <h2>📧 Support</h2>
+                <p>Hilfe und Kontakt für Ihre Fragen</p>
+            </a>
+
+            <a href="#datenschutz" class="link-card" id="datenschutz-link">
+                <h2>🔒 Datenschutz</h2>
+                <p>Informationen zum Datenschutz</p>
+            </a>
         </div>
-        
-        <div class="content">
-            <div class="links">
-                <a href="#support" class="link-card" id="support-link">
-                    <h2>📧 Support</h2>
-                    <p>Hilfe und Kontakt für Ihre Fragen</p>
-                </a>
-                
-                <a href="#datenschutz" class="link-card" id="datenschutz-link">
-                    <h2>🔒 Datenschutz</h2>
-                    <p>Informationen zum Datenschutz</p>
-                </a>
-            </div>
-            
-            <div class="social-links">
-                <a href="https://www.instagram.com/bosselgo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="social-button instagram-button">
-                    <span class="button-icon">📷</span>
-                    <span>Instagram</span>
-                </a>
-                <a href="https://apps.apple.com/de/app/bo%C3%9Felgo/id6753705513" target="_blank" rel="noopener noreferrer" class="social-button appstore-button">
-                    <span class="button-icon">📱</span>
-                    <span>App Store</span>
-                </a>
-                <a href="https://play.google.com/store/apps/details?id=de.bosselgo.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="social-button playstore-button">
-                    <span class="button-icon">▶️</span>
-                    <span>Google Play</span>
-                </a>
-            </div>
-        </div>
-        
-        <div class="footer">
-            © 2025 BoßelGo - Florian Eiben
+
+        <div class="social-links">
+            <a href="https://www.instagram.com/bosselgo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="social-button instagram-button">
+                <span class="button-icon">📷</span>
+                <span>Instagram</span>
+            </a>
+            <a href="https://apps.apple.com/de/app/bo%C3%9Felgo/id6753705513" target="_blank" rel="noopener noreferrer" class="social-button appstore-button">
+                <span class="button-icon">📱</span>
+                <span>App Store</span>
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=de.bosselgo.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="social-button playstore-button">
+                <span class="button-icon">▶️</span>
+                <span>Google Play</span>
+            </a>
         </div>
     </div>
 
-    <!-- Support Section -->
-    <div id="support" class="modal-overlay">
-        <div class="modal-container">
-            <div class="container">
-                <div class="header">
-                    <h1>Support für BoßelGo</h1>
+    <div class="footer">
+        © 2025 BoßelGo - Florian Eiben
+    </div>
+</div>
+
+<!-- Support Section -->
+<div id="support" class="modal-overlay">
+    <div class="modal-container">
+        <div class="container">
+            <div class="header">
+                <h1>Support für BoßelGo</h1>
+            </div>
+            <div class="modal-content">
+                <p style="margin-bottom: 20px;">Wenn Sie Unterstützung benötigen oder Fragen haben, kontaktieren Sie bitte:</p>
+
+                <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin: 20px 0;">
+                    <p><strong>Florian Eiben</strong></p>
+                    <p>E-Mail: <a href="mailto:bosselgo@web.de" style="color: #667eea;">bosselgo@web.de</a></p>
                 </div>
-                <div class="modal-content">
-                    <p style="margin-bottom: 20px;">Wenn Sie Unterstützung benötigen oder Fragen haben, kontaktieren Sie bitte:</p>
-                    
-                    <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin: 20px 0;">
-                        <p><strong>Florian Eiben</strong></p>
-                        <p>E-Mail: <a href="mailto:bosselgo@web.de" style="color: #667eea;">bosselgo@web.de</a></p>
-                    </div>
-                    
-                    <p>Bitte nutzen Sie diese E-Mail-Adresse für Support-Anfragen oder Feedback zur App.</p>
-                    
-                    <button onclick="document.getElementById('support').style.display='none'" class="close-button">
-                        Schließen
-                    </button>
-                </div>
+
+                <p>Bitte nutzen Sie diese E-Mail-Adresse für Support-Anfragen oder Feedback zur App.</p>
+
+                <button onclick="document.getElementById('support').style.display='none'" class="close-button">
+                    Schließen
+                </button>
             </div>
         </div>
     </div>
+</div>
 
-    <!-- Datenschutz Section -->
-    <div id="datenschutz" class="modal-overlay">
-        <div class="modal-container">
-            <div class="container">
-                <div class="header">
-                    <h1>Datenschutzerklärung</h1>
-                </div>
-                <div class="modal-content">
+<!-- Datenschutz Section -->
+<div id="datenschutz" class="modal-overlay">
+    <div class="modal-container">
+        <div class="container">
+            <div class="header">
+                <h1>Datenschutzerklärung</h1>
+            </div>
+            <div class="modal-content">
                 <h2 style="color: #667eea; margin-top: 30px; margin-bottom: 15px;">Datenschutzerklärung für BoßelGo</h2>
-                <p><strong>Stand: 22.10.2025</strong></p>
+                <p><strong>Stand: 12.02.2026</strong></p>
 
                 <h3 style="color: #667eea; margin-top: 25px; margin-bottom: 10px;">Verantwortlicher</h3>
                 <p>Florian Eiben<br>
-                Leerhafe, 26409 Wittmund<br>
-                E-Mail: <a href="mailto:bosselgo@web.de" style="color: #667eea;">bosselgo@web.de</a></p>
+                    Leerhafe, 26409 Wittmund<br>
+                    E-Mail: <a href="mailto:bosselgo@web.de" style="color: #667eea;">bosselgo@web.de</a></p>
 
                 <h3 style="color: #667eea; margin-top: 25px; margin-bottom: 10px;">Beschreibung der App</h3>
-                <p>BoßelGo ist eine mobile App zur Erfassung und Auswertung von Boßel-Wettkämpfen. Alle Match- und Spielerdaten werden ausschließlich lokal auf Ihrem Gerät verarbeitet.</p>
+                <p>BoßelGo ist eine mobile App zur Erfassung und Auswertung von Boßel-Wettkämpfen.</p>
+                <p>Die App kann lokal genutzt werden. Wenn Sie ein Benutzerkonto verwenden, werden bestimmte Daten zusätzlich in einer Cloud-Datenbank gespeichert, damit Sie Daten zwischen Geräten synchronisieren und gemeinsame Gruppen nutzen können (mehrere Mitglieder können in derselben Gruppe Wettkämpfe anlegen und bearbeiten).</p>
 
                 <h3 style="color: #667eea; margin-top: 25px; margin-bottom: 10px;">Verarbeitete Daten in der App</h3>
-                <p><strong>Lokal auf dem Gerät:</strong></p>
+
+                <p><strong>1) Lokal auf dem Gerät (Offline-Nutzung / Zwischenspeicher)</strong></p>
                 <ul style="margin-left: 20px; margin-bottom: 15px;">
-                    <li>Matchdaten (Datum, Ergebnis, Runden, Würfe)</li>
-                    <li>Teamnamen / Spielernamen (falls von Ihnen eingetragen)</li>
-                    <li>Premium-/Kaufstatus (lokal aus App Store/Play Billing abgeleitet)</li>
+                    <li>App-Einstellungen</li>
+                    <li>Lokale Kopien von Gruppen- und Wettkampfdaten (z.B. für Offline-Nutzung und schnellere Anzeige)</li>
                 </ul>
-                <p><strong>Es findet keine serverseitige Speicherung durch den Anbieter statt.</strong></p>
-                <ul style="margin-left: 20px;">
-                    <li>Keine Standortdaten</li>
-                    <li>Keine Erstellung persönlicher Nutzerkonten</li>
+
+                <p><strong>2) Benutzerkonto &amp; Anmeldung (Cloud)</strong></p>
+                <ul style="margin-left: 20px; margin-bottom: 15px;">
+                    <li>Anmeldedaten (z.B. E-Mail-Adresse) und technische Authentifizierungsdaten (User-ID, Session-/Token-Informationen)</li>
+                    <li>Login-Zeitpunkte und sicherheitsrelevante Metadaten (z.B. zur Missbrauchserkennung)</li>
                 </ul>
+                <p><strong>Hinweis:</strong> Passwörter werden nicht von uns im Klartext gespeichert; die Verarbeitung erfolgt über den Authentifizierungsdienst des Cloud-Anbieters.</p>
+
+                <p><strong>3) Profildaten (optional, je nach Eingabe)</strong></p>
+                <ul style="margin-left: 20px; margin-bottom: 15px;">
+                    <li>Name / Anzeigename</li>
+                    <li>Weitere freiwillige Angaben, die Sie innerhalb der App hinterlegen (sofern angeboten)</li>
+                </ul>
+
+                <p><strong>4) Gruppen- und Wettkampfdaten (Cloud, wenn Account genutzt wird)</strong></p>
+                <ul style="margin-left: 20px; margin-bottom: 15px;">
+                    <li>Gruppen (z.B. Gruppenname, Art/Klasse, Aufstellung/Lineup, Ersteller-ID)</li>
+                    <li>Gruppenmitgliedschaften (z.B. Zuordnung zu Gruppen, Rollen/Berechtigungen)</li>
+                    <li>Wettkämpfe/Matches und Ergebnisse (z.B. Datum, Runden/Würfe, Punktestände, Sieger)</li>
+                    <li>Einzelmeisterschaften inkl. "Champions-Tour" (falls verwendet)</li>
+                </ul>
+
+                <p><strong>5) Gemeinsame Gruppen / Sichtbarkeit für andere Nutzer</strong></p>
+                <p>Wenn Sie eine gemeinsame Gruppe nutzen, werden Inhalte, die in dieser Gruppe gespeichert werden (z.B. Wettkämpfe und Ergebnisse), für die jeweiligen Gruppenmitglieder sichtbar und zwischen deren Geräten synchronisiert.</p>
+
+                <p><strong>6) Echtzeit-Synchronisation (Realtime)</strong></p>
+                <p>Zur Synchronisation können Änderungen an Gruppen- oder Wettkampfdaten in Echtzeit an berechtigte Geräte/Benutzer übertragen werden. Dies dient ausschließlich der Aktualisierung gemeinsamer Inhalte und nicht der Erstellung von Nutzungsprofilen.</p>
+
+                <h3 style="color: #667eea; margin-top: 25px; margin-bottom: 10px;">Cloud-Dienstleister (Supabase)</h3>
+                <p>Für Benutzerkonto, Datenbankhosting und Synchronisation nutzen wir den Dienst <strong>Supabase</strong> (Authentifizierung, Datenbank und Realtime). Dabei werden die oben genannten Cloud-Daten an Supabase übermittelt und dort verarbeitet, um die Funktionen bereitzustellen.</p>
+                <p>Supabase verarbeitet die Daten in der Regel als <strong>Auftragsverarbeiter</strong> (Hosting/Backend-Dienstleistung). Weitere Informationen finden Sie in den Datenschutzhinweisen von Supabase: <a href="https://supabase.com/privacy" target="_blank" style="color: #667eea;">https://supabase.com/privacy</a></p>
+                <p><strong>Drittlandübermittlung:</strong> Je nach Projekt-Region und eingesetzten Unterauftragsverarbeitern kann eine Verarbeitung auch außerhalb der EU/des EWR erfolgen. In solchen Fällen erfolgt die Übermittlung auf Basis geeigneter Garantien (z.B. EU-Standardvertragsklauseln).</p>
 
                 <h3 style="color: #667eea; margin-top: 25px; margin-bottom: 10px;">Werbung (Google AdMob)</h3>
                 <p>Die App bindet Google AdMob (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland) ein.</p>
@@ -523,18 +551,18 @@
                     <li>Crash-Daten und Leistungsmetriken</li>
                 </ul>
                 <p><strong>Zweck der Verarbeitung:</strong></p>
-                <ul style="margin-left: 20px; margin-bottom: 15px;">
+                <ul style="margin-left: 20px; margin-bottom: 15px">
                     <li>Auslieferung und Messung von Werbeanzeigen</li>
                     <li>Betrugsprävention</li>
                     <li>App-Stabilität und Performance-Analyse</li>
                 </ul>
                 <p>Es erfolgt keine eigene Weitergabe dieser Daten durch den Anbieter. Die App ist so konfiguriert, dass vorrangig nicht personalisierte Anzeigen ausgeliefert werden (Google verarbeitet diese ohne Profilbildung).</p>
                 <p>Google Datenschutzhinweise: <a href="https://policies.google.com/privacy" target="_blank" style="color: #667eea;">https://policies.google.com/privacy</a></p>
-                
+
                 <p><strong>Opt-out Werbe-ID:</strong></p>
                 <ul style="margin-left: 20px;">
-                    <li><strong>Android:</strong> Systemeinstellungen > Google > Anzeigen > "Werbe-ID zurücksetzen" oder "Personalisierte Werbung deaktivieren"</li>
-                    <li><strong>iOS:</strong> Einstellungen > Datenschutz & Sicherheit > Tracking > "Apps erlauben, Tracking anzufordern" deaktivieren</li>
+                    <li><strong>Android:</strong> Systemeinstellungen &gt; Google &gt; Anzeigen &gt; "Werbe-ID zurücksetzen" oder "Personalisierte Werbung deaktivieren"</li>
+                    <li><strong>iOS:</strong> Einstellungen &gt; Datenschutz &amp; Sicherheit &gt; Tracking &gt; "Apps erlauben, Tracking anzufordern" deaktivieren</li>
                 </ul>
 
                 <h3 style="color: #667eea; margin-top: 25px; margin-bottom: 10px;">In-App-Käufe</h3>
@@ -547,28 +575,30 @@
                 </ul>
                 <p>Der Anbieter erhält keinen direkten Zugriff auf Ihre Zahlungsdaten. Es wird lokal lediglich der Freischaltstatus gespeichert.</p>
                 <p>Apple Datenschutzhinweise: <a href="https://www.apple.com/legal/privacy/" target="_blank" style="color: #667eea;">https://www.apple.com/legal/privacy/</a><br>
-                Google Play Datenschutzhinweise: <a href="https://policies.google.com/privacy" target="_blank" style="color: #667eea;">https://policies.google.com/privacy</a></p>
+                    Google Play Datenschutzhinweise: <a href="https://policies.google.com/privacy" target="_blank" style="color: #667eea;">https://policies.google.com/privacy</a></p>
 
                 <h3 style="color: #667eea; margin-top: 25px; margin-bottom: 10px;">Rechtsgrundlagen (DSGVO)</h3>
                 <ul style="margin-left: 20px;">
-                    <li><strong>Art. 6 Abs. 1 lit. b DSGVO</strong> – Bereitstellung der Appfunktionen, Abwicklung von In-App-Käufen</li>
-                    <li><strong>Art. 6 Abs. 1 lit. f DSGVO</strong> – Berechtigtes Interesse: Finanzierung durch Werbung, App-Stabilität und Betrugsprävention</li>
+                    <li><strong>Art. 6 Abs. 1 lit. b DSGVO</strong> – Bereitstellung der Appfunktionen, Benutzerkonto, Cloud-Synchronisation, gemeinsame Gruppen, Abwicklung von In-App-Käufen</li>
+                    <li><strong>Art. 6 Abs. 1 lit. f DSGVO</strong> – Berechtigtes Interesse: Sicherheit, Missbrauchsprävention sowie Stabilität und Betrieb der App</li>
                 </ul>
                 <p>Für personalisierte Werbung würde Art. 6 Abs. 1 lit. a (Einwilligung) gelten; derzeit erfolgt die Ausrichtung auf nicht personalisierte Anzeigen (soweit technisch konfiguriert).</p>
 
-                <h3 style="color: #667eea; margin-top: 25px; margin-bottom: 10px;">Weitergabe von Daten / Drittlandübermittlung</h3>
-                <p>Es erfolgt keine eigene Weitergabe Ihrer lokal verbleibenden Appdaten durch den Anbieter.</p>
-                <p>AdMob (Google) und App Store (Apple) können Daten in Drittländer (z.B. USA) übertragen:</p>
-                <ul style="margin-left: 20px;">
-                    <li><strong>Rechtsgrundlage:</strong> EU-Standardvertragsklauseln und Angemessenheitsbeschlüsse</li>
-                    <li><strong>Weitere Informationen:</strong> Siehe Datenschutzerklärungen von Google und Apple (Links oben)</li>
+                <h3 style="color: #667eea; margin-top: 25px; margin-bottom: 10px;">Weitergabe von Daten / Empfänger</h3>
+                <p>Je nach Nutzung werden Daten an folgende Empfänger übermittelt:</p>
+                <ul style="margin-left: 20px; margin-bottom: 15px;">
+                    <li><strong>Supabase</strong> (Cloud-Backend für Konto, Datenbank, Synchronisation)</li>
+                    <li><strong>Google</strong> (AdMob für Werbung, sofern aktiviert)</li>
+                    <li><strong>Apple / Google</strong> (Abwicklung von In-App-Käufen)</li>
                 </ul>
+                <p>Innerhalb gemeinsamer Gruppen werden gruppenbezogene Inhalte außerdem an die jeweiligen <strong>Gruppenmitglieder</strong> offengelegt, damit diese gemeinsam Wettkämpfe verwalten können.</p>
 
                 <h3 style="color: #667eea; margin-top: 25px; margin-bottom: 10px;">Speicherdauer</h3>
                 <ul style="margin-left: 20px;">
-                    <li><strong>Match-/Spielerdaten:</strong> Verbleiben bis zu Ihrer Löschung bzw. Deinstallation auf dem Gerät</li>
-                    <li><strong>Werbedatenverarbeitung:</strong> Nach den Löschfristen von Google</li>
-                    <li><strong>Kaufstatus:</strong> Bleibt bis zum Zurücksetzen/Neuinstallation lokal bestehen; Transaktionsdaten bei Apple/Google nach deren Aufbewahrungsfristen</li>
+                    <li><strong>Lokale Daten:</strong> verbleiben bis zu Ihrer Löschung bzw. Deinstallation auf dem Gerät</li>
+                    <li><strong>Account- und Cloud-Daten:</strong> werden grundsätzlich gespeichert, solange Ihr Benutzerkonto besteht bzw. bis zur Löschung der jeweiligen Inhalte (z.B. Gruppen/Wettkämpfe) innerhalb der App</li>
+                    <li><strong>Werbedatenverarbeitung:</strong> nach den Löschfristen von Google</li>
+                    <li><strong>Kaufstatus:</strong> bleibt bis zum Zurücksetzen/Neuinstallation lokal bestehen; Transaktionsdaten bei Apple/Google nach deren Aufbewahrungsfristen</li>
                 </ul>
 
                 <h3 style="color: #667eea; margin-top: 25px; margin-bottom: 10px;">Rechte der betroffenen Personen</h3>
@@ -587,9 +617,9 @@
 
                 <h3 style="color: #667eea; margin-top: 25px; margin-bottom: 10px;">Sicherheit</h3>
                 <ul style="margin-left: 20px;">
-                    <li>Daten bleiben lokal in der App-Sandbox gespeichert</li>
-                    <li>Kommunikation mit App Store/Play Billing und AdMob erfolgt verschlüsselt über TLS/HTTPS</li>
-                    <li>Keine eigene Serverinfrastruktur</li>
+                    <li>Lokale Daten bleiben in der App-Sandbox gespeichert</li>
+                    <li>Kommunikation mit Cloud-Diensten, App Store/Play Billing und AdMob erfolgt verschlüsselt über TLS/HTTPS</li>
+                    <li>Zugriffe auf Cloud-Daten werden durch Authentifizierung und Berechtigungen geschützt (z.B. nur Gruppenmitglieder)</li>
                 </ul>
 
                 <h3 style="color: #667eea; margin-top: 25px; margin-bottom: 10px;">Minderjährige</h3>
@@ -607,38 +637,38 @@
 
                 <h3>Kontakt</h3>
                 <p>Datenschutzanfragen: <a href="mailto:bosselgo@web.de">bosselgo@web.de</a></p>
-                
+
                 <button onclick="document.getElementById('datenschutz').style.display='none'" class="close-button">
                     Schließen
                 </button>
-                </div>
             </div>
         </div>
     </div>
+</div>
 
-    <script>
-        document.getElementById('support-link').addEventListener('click', function(e) {
-            e.preventDefault();
-            document.getElementById('support').style.display = 'block';
-        });
-        
-        document.getElementById('datenschutz-link').addEventListener('click', function(e) {
-            e.preventDefault();
-            document.getElementById('datenschutz').style.display = 'block';
-        });
-        
-        // Close on background click
-        document.getElementById('support').addEventListener('click', function(e) {
-            if (e.target === this) {
-                this.style.display = 'none';
-            }
-        });
-        
-        document.getElementById('datenschutz').addEventListener('click', function(e) {
-            if (e.target === this) {
-                this.style.done = 'none';
-            }
-        });
-    </script>
+<script>
+    document.getElementById('support-link').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.getElementById('support').style.display = 'block';
+    });
+
+    document.getElementById('datenschutz-link').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.getElementById('datenschutz').style.display = 'block';
+    });
+
+    // Close on background click
+    document.getElementById('support').addEventListener('click', function(e) {
+        if (e.target === this) {
+            this.style.display = 'none';
+        }
+    });
+
+    document.getElementById('datenschutz').addEventListener('click', function(e) {
+        if (e.target === this) {
+            this.style.display = 'none';
+        }
+    });
+</script>
 </body>
 </html>
